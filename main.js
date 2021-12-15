@@ -8,4 +8,10 @@ $(document).ready(() => {
       fontFamily: `${$(event.currentTarget).val()}`,
     });
   });
+
+  $("#weight").on("change", (event) => {
+    $(".preview").css({
+      fontWeight: `${$(event.currentTarget).val()}`,
+    });
+  });
 });
